@@ -8,6 +8,9 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v1
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: lint
         run: |
           ls
