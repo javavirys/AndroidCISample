@@ -29,3 +29,8 @@ jobs:
       - name: build
         run: |
           ./gradlew assemble
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: app/build/outputs/
